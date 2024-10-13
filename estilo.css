@@ -3,3 +3,102 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    margin: 0px;
+}
+#topo{
+    width: 100%;
+    height: 10vw;
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    align-content: center;
+    font-size: larger;
+}
+h1{
+    text-align: center;
+    font-family: serif;
+    color: aliceblue;
+}
+h2{
+    font-family: serif;
+    font-size: xx-large;
+    color: black;
+    margin: 20px;
+    margin-top: 20px;
+}
+nav{
+   text-align: center;
+   margin-top: 50px;
+   font-family: serif;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 50px 10px 0px;
+    font-size: 15pt;
+    position: relative;
+}
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+    height: 2px;
+}
+#caixa{
+    width: 100%;
+    height: 80vw;
+    border-style: solid;
+    background-color: rgba(241, 241, 168, 0.678);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    background-image: url(imagens/mans.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+p{
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 35%;
+    font-size: 25px;
+}
+.corpo{
+    width: 45%;
+    height: 37vw;
+    background-color: rgb(248, 248, 248);
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: transform 0.2s, background-color 0.5s;
+    cursor: pointer;
+}
+.corpo:hover{
+    transform: scale(0.9);
+    background-color: rgb(155, 144, 144);
+    
+}
+#rodape{
+    width: 100%;
+    height: 10vw;
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+}
+img{
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    height: 40%;
+    flex-wrap: wrap;
+}
